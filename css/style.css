@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  /* text-decoration: none; */
+  outline: none;
+  font-weight: 400;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  background-color: rgb(255, 255, 255);
+}
+.container {
+  background-color: rgb(57, 57, 57);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 40rem;
+  height: 90vh;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(0, 0, 0), -0.1rem 0 1rem rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: rgb(24, 73, 73);
+}
+.card-title {
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bolder;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(0, 0, 0);
+  margin-bottom: 1.5rem;
+}
+.form-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+#todo {
+  width: 79%;
+  height: 3.3rem;
+  background-color: rgb(211, 211, 211);
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  margin-right: 0.8rem;
+  transition: all 0.3s;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0), -0.1rem 0 1rem rgb(0, 0, 0);
+}
+#todo:hover {
+  background-color: white;
+}
+#btn {
+  width: 18%;
+  height: 2.5rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  transition: all 0.3s;
+  margin-top: 0.4rem;
+}
+#btn:hover {
+  background-color: blue;
+  color: aliceblue;
+  cursor: pointer;
+}
+.lists {
+  height: 70vh;
+  overflow: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  list-style-type: decimal;
+}
+.lists::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.lists::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.606);
+  border-radius: 1rem;
+  border: 1px solid rgb(255, 0, 217);
+}
+.lists::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  border: 1px solid rgba(85, 255, 0, 0.712);
+}
+.lists::-webkit-scrollbar:hover {
+  background-color: rgb(4, 0, 255);
+}
+#deleteBtn {
+  height: 2.5rem;
+  background-color: rgb(255, 0, 0);
+  border-radius: 1rem;
+  transition: all 0.3s;
+  width: 2rem;
+  transition: all0.3s;
+}
+#deleteBtn:hover {
+  background-color: blue;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.form-style {
+  background-color: rgb(0, 0, 0);
+  max-width: 100%;
+  font-size: 1.8rem;
+  color: aliceblue;
+  border-radius: 1rem;
+  padding: 0.8rem 0.5rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  transition: all0.3s;
+}
+.bg-success {
+  background-color: rgb(0, 6, 195);
+  color: aliceblue;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.8rem;
+  width: 20rem;
+}
+.bg-danger {
+  background-color: rgba(255, 0, 0, 0.707);
+  color: aliceblue;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.8rem;
+  width: 20rem;
+}
